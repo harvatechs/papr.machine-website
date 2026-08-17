@@ -1,0 +1,147 @@
+/**
+ * Contact Form Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.11
+ */
+
+.contact-section {
+  background-color: var(--white);
+}
+
+.contact__container {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__headline {
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--brand-black);
+  margin-bottom: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .contact__headline {
+    font-size: 42px;
+  }
+}
+
+.contact__lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--grey-700);
+  margin-bottom: var(--space-5);
+}
+
+/* Form element */
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-black);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: var(--font-brand);
+  font-size: 16px;
+  color: var(--brand-black);
+  background-color: var(--grey-50);
+  border: 1px solid var(--grey-300);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--duration-fast) var(--ease-standard),
+              background-color var(--duration-fast) var(--ease-standard);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--brand-blue);
+  background-color: var(--white);
+  outline: none;
+}
+
+.form-select-wrap {
+  position: relative;
+}
+
+.form-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='none' stroke='%2348484F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-error-text {
+  font-size: 12px;
+  color: #e5185d;
+  display: none;
+  margin-top: 2px;
+}
+
+.form-group.has-error .form-input,
+.form-group.has-error .form-select,
+.form-group.has-error .form-textarea {
+  border-color: #e5185d;
+}
+
+.form-group.has-error .form-error-text {
+  display: block;
+}
+
+/* Status Notifications */
+.form-status {
+  display: none;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: var(--space-2);
+}
+
+.form-status--success {
+  background-color: rgba(39, 201, 63, 0.1);
+  border: 1px solid rgba(39, 201, 63, 0.3);
+  color: #1b8a2a;
+}
+
+.form-status--error {
+  background-color: rgba(229, 24, 93, 0.1);
+  border: 1px solid rgba(229, 24, 93, 0.3);
+  color: #b01042;
+}

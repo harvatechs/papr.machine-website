@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Papr.Machine — Printing. Automated.</title>
+  <meta name="description"
+    content="Scan a QR code, upload your file, pay, and collect a print — with no staff, no software to install, and no waiting in line. Papr.Machine is the self-service printing kiosk built by Tilak Infotech.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Papr.Machine — Printing. Automated.">
+  <meta property="og:description"
+    content="Scan a QR code, upload your file, pay, and collect a print — with no staff, no software to install, and no waiting in line.">
+  <meta property="og:image" content="/public/og-image.png">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="canonical" href="https://papr.machine/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <link rel="icon" type="image/png" href="public/favicon.png">
+
+  <!-- Typography: Poppins & Inter via Google Fonts with preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet Bundle -->
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+
+  <!-- Section 1: Header (Sticky) -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="#hero" class="site-header__logo-link" aria-label="Papr.Machine Home">
+        <img src="assets/brand/icon.png" alt="Papr.Machine Icon" class="site-header__logo-icon" width="36" height="36">
+        <span class="site-header__logo-text">Papr<span class="dot">.</span>Machine</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul class="site-nav__list">
+          <li><a href="#how-it-works" class="site-nav__link">How it works</a></li>
+          <li><a href="#the-kiosk" class="site-nav__link">The kiosk</a></li>
+          <li><a href="#for-business" class="site-nav__link">For business</a></li>
+          <li><a href="#demo" class="site-nav__link">Get the demo</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="#contact" class="btn btn--ghost btn--sm">Talk to us</a>
+        <a href="assets/downloads/Papr.Machine-Setup.exe" download="Papr.Machine-Setup.exe"
+          class="btn btn--primary btn--sm btn--download-demo">
+          <span class="btn__badge">Free Gift</span>
+          <span>Free Demo</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 2: Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <span class="eyebrow eyebrow--accent hero-load hero-load--eyebrow">PRINTING. AUTOMATED.</span>
+            <div class="hero__headline-wrap hero-load hero-load--headline">
+              <h1 id="hero-title" class="hero__headline">No counter. No staff. No waiting.</h1>
+              <div class="hero__accent-rule" aria-hidden="true"></div>
+            </div>
+            <p class="hero__lede hero-load hero-load--lede">
+              Papr.Machine turns any wall into a fully automated print shop. Your customer scans a code, uploads a file,
+              pays, and walks away holding a finished print in about the time it takes to read this.
+            </p>
+            <div class="hero__cta-group hero-load hero-load--cta">
+              <a href="assets/downloads/Papr.Machine-Setup.exe" download="Papr.Machine-Setup.exe"
+                class="btn btn--primary btn--free-gift btn--download-demo">
+                <span class="btn__badge">Free Gift</span>
+                <span>Download Free Demo</span>
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn--ghost">Talk to us</a>
+            </div>
+            <span class="hero__micro-caption hero-load hero-load--caption">
+              100% Free Forever Gift · Real Windows Setup EXE · Runs on your PC in minutes
+            </span>
+          </div>
+
+          <div class="hero__visual hero-load hero-load--visual">
+            <img src="assets/screenshots/kiosk-hardware.png"
+              alt="Papr.Machine self-service printing kiosk hardware terminal" class="hero__kiosk-img" width="1023"
+              height="1501">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The Problem -->
+    <section class="section problem-section" id="the-problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="problem-content reveal-item">
+          <span class="eyebrow">THE OLD WAY</span>
+          <h2 id="problem-title" class="problem-headline">Printing one page still takes fifteen minutes.</h2>
+          <p class="problem-body">
+            Walk in. Explain what you need. Wait for someone free. Watch them get it wrong once. Pay in cash because the
+            card machine is "acting up today." Walk out later than you meant to for one page.
+          </p>
+          <p class="problem-punchline">
+            That's not a printing problem. That's a staffing problem wearing a printing costume.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: How It Works -->
+    <section class="section" id="how-it-works" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="how-it-works__header reveal-item">
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2 id="steps-title" class="section-heading">Four steps. Zero explaining.</h2>
+        </div>
+
+        <div class="how-it-works__layout">
+          <!-- Step cards list -->
+          <div class="steps-list">
+            <div class="step-item reveal-item delay-1">
+              <div class="step-badge" aria-hidden="true">01</div>
+              <div class="step-content">
+                <h3 class="step-title">Step 01 — Scan</h3>
+                <p class="step-desc">A QR code and a live 4-digit code sit on the kiosk screen at all times. Point a
+                  phone camera at it. That's the whole login.</p>
+              </div>
+            </div>
+
+            <div class="step-item reveal-item delay-2">
+              <div class="step-badge" aria-hidden="true">02</div>
+              <div class="step-content">
+                <h3 class="step-title">Step 02 — Upload &amp; choose</h3>
+                <p class="step-desc">Upload the file from your phone. Pick color or black-and-white, how many pages per
+                  sheet, single or double-sided. The kiosk shows a live preview before anything prints.</p>
+              </div>
+            </div>
+
+            <div class="step-item reveal-item delay-3">
+              <div class="step-badge" aria-hidden="true">03</div>
+              <div class="step-content">
+                <h3 class="step-title">Step 03 — Pay</h3>
+                <p class="step-desc">Scan a UPI code, pay from the phone, done. No card machine, no change, no "sorry,
+                  cash only."</p>
+              </div>
+            </div>
+
+            <div class="step-item reveal-item delay-4">
+              <div class="step-badge" aria-hidden="true">04</div>
+              <div class="step-content">
+                <h3 class="step-title">Step 04 — Collect</h3>
+                <p class="step-desc">The kiosk prints. A token number appears for reference. The file is deleted the
+                  moment the job completes, nothing is stored, nothing is kept.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real product Display proof card -->
+          <div class="display-proof-card reveal-item delay-2" aria-label="Live Display Product Proof">
+            <div class="display-proof__header">
+              <div class="display-proof__title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00AAFF" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Live Kiosk Display</span>
+              </div>
+              <span class="display-proof__badge">Session ready</span>
+            </div>
+
+            <div class="display-proof__qr-area">
+              <img src="assets/screenshots/qr-demo.png"
+                alt="Papr.Machine kiosk display showing a live QR code and pairing PIN" class="display-proof__qr-img"
+                width="180" height="180">
+            </div>
+
+            <!-- Authentic TOTP countdown ring mirroring Display component -->
+            <div class="totp-component" role="timer" aria-label="TOTP countdown timer">
+              <svg class="totp-ring-svg" viewBox="0 0 180 180" aria-hidden="true">
+                <defs>
+                  <linearGradient id="totp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00AAFF"></stop>
+                    <stop offset="55%" stop-color="#F91CB1"></stop>
+                    <stop offset="100%" stop-color="#FDE40D"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="90" cy="90" r="70" class="totp-ring-track"></circle>
+                <circle cx="90" cy="90" r="70" class="totp-ring-progress" stroke="url(#totp-gradient)"></circle>
+              </svg>
+
+              <div class="totp-inner-info">
+                <span class="totp-code-label">Live code</span>
+                <span class="totp-live-code">483683</span>
+                <span class="totp-timer-text">60s · rolls in 30s</span>
+              </div>
+            </div>
+
+            <!-- PIN pairing row -->
+            <div class="pin-pairing-row">
+              <div class="pin-box">
+                <div class="pin-label">Pairing PIN</div>
+                <div class="pin-value">7482</div>
+              </div>
+              <div class="pin-box">
+                <div class="pin-label">Enter on phone</div>
+                <p style="font-size: 12px; color: var(--grey-700); margin: 0; line-height: 1.4;">Type PIN to pair kiosk
+                  after scanning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Privacy trust callout strip -->
+        <div class="trust-strip reveal-item">
+          <svg class="trust-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+          <span>Your file never leaves the session. It's gone the second your print is done.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Trust / Privacy -->
+    <section class="section trust-section" id="trust" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="trust-block reveal-item">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg class="trust-icon-svg" viewBox="0 0 24 24" fill="none" stroke="url(#shield-gradient-solo)"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="shield-gradient-solo" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00AAFF"></stop>
+                  <stop offset="55%" stop-color="#F91CB1"></stop>
+                  <stop offset="100%" stop-color="#FDE40D"></stop>
+                </linearGradient>
+              </defs>
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <span class="eyebrow">YOUR FILE, NOT OURS</span>
+          <h2 id="trust-title" class="trust-headline">We built this to forget you.</h2>
+          <p class="trust-body">
+            Every session is locked to a one-time code. Nothing is tied to your name, your number, or your face. The
+            moment your document prints — or the session times out — the file is permanently deleted. Not archived. Not
+            backed up. Gone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: The Kiosk (Hardware) -->
+    <section class="section kiosk-section" id="the-kiosk" aria-labelledby="kiosk-title">
+      <div class="container">
+        <div class="kiosk__grid">
+          <!-- Alternating layout: Hardware visual left / text right -->
+          <div class="kiosk__visual reveal-item">
+            <img src="assets/screenshots/kiosk-hardware.png" alt="Papr.Machine physical unattended kiosk terminal"
+              class="kiosk__render-img" width="1023" height="1501" loading="lazy">
+          </div>
+
+          <div class="kiosk__content reveal-item delay-1">
+            <span class="eyebrow">THE HARDWARE</span>
+            <h2 id="kiosk-title" class="section-heading">One screen. One printer. One quiet corner of your shop.</h2>
+            <p class="section-lede">
+              Papr.Machine runs on a single always-on display next to any standard printer — CUPS or Windows-driver,
+              nothing exotic. It needs no attendant, no training, and no daily maintenance beyond loading paper.
+            </p>
+
+            <ul class="kiosk__capabilities">
+              <li class="kiosk__capability-item">
+                <svg class="kiosk__capability-marker" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Works with the printer you already own</span>
+              </li>
+              <li class="kiosk__capability-item">
+                <svg class="kiosk__capability-marker" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Recovers from a dropped connection on its own</span>
+              </li>
+              <li class="kiosk__capability-item">
+                <svg class="kiosk__capability-marker" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Runs unattended, all day, every day</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: For Business / Franchise -->
+    <section class="section business-section" id="for-business" aria-labelledby="business-title">
+      <div class="container">
+        <div class="business__container reveal-item">
+          <span class="eyebrow">FOR SHOPS, BRANDS &amp; FRANCHISES</span>
+          <h2 id="business-title" class="section-heading">Put Papr.Machine in your space.</h2>
+          <p class="business__lede">
+            Whether you run one shop or you're scouting a franchise opportunity, Papr.Machine is built by Tilak Infotech
+            to be dropped into a real business — not a lab demo. We handle the setup wizard, pricing rules, and printer
+            pairing. You handle opening the doors.
+          </p>
+
+          <div class="business__cta-wrap">
+            <a href="#contact" class="btn btn--ghost">Talk to us</a>
+          </div>
+
+          <!-- Secondary product proof: Admin Dashboard Frame -->
+          <div class="business__proof-frame device-frame" aria-label="Papr.Machine Admin Dashboard Preview">
+            <div class="device-frame__header">
+              <span class="device-frame__dot device-frame__dot--red"></span>
+              <span class="device-frame__dot device-frame__dot--yellow"></span>
+              <span class="device-frame__dot device-frame__dot--green"></span>
+            </div>
+            <img src="assets/screenshots/admin-dashboard.png"
+              alt="Papr.Machine Admin dashboard showing live job feed, daily earnings, and device health status"
+              class="business__proof-img" width="1280" height="612" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Get The Free Demo -->
+    <section class="section demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="demo__container reveal-item">
+          <div class="demo__gift-badge">
+            <span>🎁</span>
+            <span>Special Gift · 100% Free Forever Build</span>
+          </div>
+
+          <span class="eyebrow">TRY IT YOURSELF</span>
+          <h2 id="demo-title" class="demo__headline">This isn't a preview video. It's the real thing.</h2>
+          <p class="demo__lede">
+            Download our free gift evaluation edition and run the actual Papr.Machine software on your own computer —
+            the same Admin dashboard and kiosk Display shown above. No account, no credit card, no expiration date.
+          </p>
+
+          <div class="demo__value-pills">
+            <span class="demo__value-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              100% Free Forever
+            </span>
+            <span class="demo__value-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              No Credit Card
+            </span>
+            <span class="demo__value-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Runs Locally (.exe)
+            </span>
+          </div>
+
+          <div class="demo__action-group">
+            <a href="assets/downloads/Papr.Machine-Setup.exe" download="Papr.Machine-Setup.exe"
+              class="btn btn--primary btn--lg btn--download-demo">
+              <span class="btn__badge">Free Forever</span>
+              <span>Download Free Demo (Setup EXE)</span>
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <span class="demo__micro-caption">
+              Windows (.exe) · Instant Setup · Zero data leaves your machine
+            </span>
+          </div>
+
+          <!-- Product launcher window proof -->
+          <div class="demo__launcher-frame device-frame" aria-label="Papr.Machine Launcher Window">
+            <div class="device-frame__header">
+              <span class="device-frame__dot device-frame__dot--red"></span>
+              <span class="device-frame__dot device-frame__dot--yellow"></span>
+              <span class="device-frame__dot device-frame__dot--green"></span>
+            </div>
+            <img src="assets/screenshots/launcher.png"
+              alt="Papr.Machine desktop launcher showing Admin Panel and Display launch options"
+              class="demo__launcher-img" width="976" height="676" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Contact / Collaborate Form -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__container reveal-item">
+          <span class="eyebrow">LET'S TALK</span>
+          <h2 id="contact-title" class="contact__headline">Support, integration, or franchise — tell us which.</h2>
+          <p class="contact__lede">
+            Every message reaches Tilak Infotech's product team directly on WhatsApp. No ticket queues.
+          </p>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required
+                autocomplete="name">
+              <span class="form-error-text">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required
+                autocomplete="email">
+              <span class="form-error-text">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="topic" class="form-label">What are you reaching out about?</label>
+              <div class="form-select-wrap">
+                <select id="topic" name="topic" class="form-select" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="support">Support</option>
+                  <option value="integration">Brand integration</option>
+                  <option value="franchise">Franchise</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <span class="form-error-text">Please select what you are reaching out about.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="How can we help?"
+                required></textarea>
+              <span class="form-error-text">Please enter your message.</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send message via WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <!-- Accessible status notification panels -->
+            <div id="form-success" class="form-status form-status--success" role="status" tabindex="-1">
+              Opening WhatsApp to connect directly with Tilak Infotech product team...
+            </div>
+            <div id="form-error" class="form-status form-status--error" role="alert" tabindex="-1">
+              Something didn't send. Try again, or email us directly at tilakinfotech@gmail.com.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 10: Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Left column: Brand & Identity -->
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo-link" aria-label="Papr.Machine Home">
+            <img src="assets/brand/icon.png" alt="Papr.Machine Icon" class="footer__logo-icon" width="32" height="32">
+            <span class="footer__logo-text">Papr<span class="dot">.</span>Machine</span>
+          </a>
+          <p class="footer__tagline">
+            Papr.Machine is built and maintained by Tilak Infotech.
+          </p>
+        </div>
+
+        <!-- Center column: Anchor Navigation -->
+        <div class="footer__nav">
+          <span class="footer__heading">Navigation</span>
+          <ul class="footer__links">
+            <li><a href="#how-it-works" class="footer__link">How it works</a></li>
+            <li><a href="#the-kiosk" class="footer__link">The kiosk</a></li>
+            <li><a href="#for-business" class="footer__link">For business</a></li>
+            <li><a href="#demo" class="footer__link">Get the demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Right column: Contact Details -->
+        <div class="footer__contact">
+          <span class="footer__heading">Contact</span>
+          <div class="footer__contact-item">
+            <a href="mailto:tilakinfotech@gmail.com">tilakinfotech@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <a href="https://wa.me/917019631612" target="_blank" rel="noopener">+91 70196 31612</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>Bangalore, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Tilak Infotech. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+
+</html>

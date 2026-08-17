@@ -1,0 +1,177 @@
+/**
+ * Get The Free Demo Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.10 & Mobile Optimization
+ */
+
+.demo-section {
+  background-color: var(--grey-50);
+  border-top: 1px solid var(--grey-100);
+  border-bottom: 1px solid var(--grey-100);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.demo__container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Free Forever Special Gift Callout Banner */
+.demo__gift-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(253, 228, 13, 0.2);
+  border: 1px solid rgba(253, 228, 13, 0.6);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--brand-black);
+  margin-bottom: var(--space-2);
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .demo__gift-badge {
+    font-size: 13px;
+    padding: 6px 14px;
+    gap: 8px;
+  }
+}
+
+.demo__headline {
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--brand-black);
+  margin-bottom: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .demo__headline {
+    font-size: 46px;
+    line-height: 1.12;
+    margin-bottom: var(--space-3);
+  }
+}
+
+.demo__lede {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--grey-700);
+  margin-bottom: var(--space-3);
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .demo__lede {
+    font-size: 21px;
+    line-height: 1.65;
+    margin-bottom: var(--space-4);
+  }
+}
+
+/* Value checklist */
+.demo__value-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: var(--space-4);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .demo__value-pills {
+    gap: 12px;
+  }
+}
+
+.demo__value-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--grey-700);
+  background-color: var(--white);
+  border: 1px solid var(--grey-300);
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+}
+
+@media (min-width: 768px) {
+  .demo__value-pill {
+    font-size: 14px;
+    padding: 6px 14px;
+    gap: 6px;
+  }
+}
+
+.demo__value-pill svg {
+  color: #27C93F;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .demo__value-pill svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.demo__action-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .demo__action-group .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .demo__action-group {
+    margin-bottom: var(--space-6);
+  }
+}
+
+.demo__micro-caption {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--grey-500);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .demo__micro-caption {
+    font-size: 13px;
+  }
+}
+
+/* Launcher screenshot frame */
+.demo__launcher-frame {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.demo__launcher-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

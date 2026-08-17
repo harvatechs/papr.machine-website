@@ -1,0 +1,58 @@
+/**
+ * Design Tokens — Papr.Machine
+ * Source of Truth: 01-BRAND-DESIGN-SYSTEM.md §1.10
+ */
+:root {
+  /* Brand Core Palette */
+  --brand-blue: #00AAFF;
+  --brand-pink: #F91CB1;
+  --brand-yellow: #FDE40D;
+  --brand-black: #010000;
+  
+  /* The Brand Gradient — Budget: Max 3 instances site-wide */
+  --brand-gradient: linear-gradient(135deg, #00AAFF 0%, #F91CB1 55%, #FDE40D 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #0099e6 0%, #e0189f 55%, #e5ce0b 100%);
+
+  /* Neutrals */
+  --white: #FFFFFF;
+  --grey-50: #FAFAFA;
+  --grey-100: #F2F2F3;
+  --grey-300: #D8D8DC;
+  --grey-500: #8A8A93;
+  --grey-700: #48484F;
+
+  /* Typography */
+  --font-brand: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing Scale (8px base) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+  --space-7: 128px;
+  --space-8: 192px;
+
+  /* Corner Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Shadows (Soft, diffuse, low-opacity black) */
+  --shadow-soft: 0 1px 2px rgba(1, 0, 0, 0.04), 0 8px 24px rgba(1, 0, 0, 0.06);
+  --shadow-lifted: 0 24px 64px rgba(1, 0, 0, 0.10);
+  --shadow-window: 0 20px 48px rgba(1, 0, 0, 0.08), 0 1px 2px rgba(1, 0, 0, 0.04);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-base: 320ms;
+  --duration-slow: 600ms;
+
+  /* Layout */
+  --max-width: 1200px;
+  --header-height-default: 96px;
+  --header-height-scrolled: 64px;
+}

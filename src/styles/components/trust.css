@@ -1,0 +1,59 @@
+/**
+ * Trust & Privacy Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.7
+ */
+
+.trust-section {
+  background-color: var(--white);
+  border-top: 1px solid var(--grey-100);
+}
+
+.trust-block {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trust-icon-wrap {
+  width: 56px;
+  height: 56px;
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-icon-svg {
+  width: 52px;
+  height: 52px;
+}
+
+.trust-headline {
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--brand-black);
+  margin-bottom: var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .trust-headline {
+    font-size: 46px;
+  }
+}
+
+.trust-body {
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--grey-700);
+  max-width: 64ch;
+}
+
+@media (min-width: 768px) {
+  .trust-body {
+    font-size: 22px;
+  }
+}

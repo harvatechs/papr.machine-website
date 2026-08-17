@@ -1,0 +1,209 @@
+/**
+ * Hero Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.4 & Mobile Optimization
+ */
+
+.hero {
+  padding-top: calc(64px + var(--space-3));
+  padding-bottom: var(--space-5);
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: calc(var(--header-height-default) + var(--space-4));
+    padding-bottom: var(--space-6);
+    min-height: 86vh;
+  }
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: var(--space-4);
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero__grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: var(--space-6);
+  }
+}
+
+/* Hero Content Column */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero__headline-wrap {
+  position: relative;
+  margin-bottom: var(--space-2);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero__headline-wrap {
+    margin-bottom: var(--space-3);
+  }
+}
+
+.hero__headline {
+  font-size: clamp(30px, 7.5vw, 64px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--brand-black);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* The Brand Gradient Accent Rule (04 §4.5 - Budget 2/3) */
+.hero__accent-rule {
+  width: 120px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--brand-gradient);
+  margin-top: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .hero__accent-rule {
+    width: 140px;
+  }
+}
+
+.hero__lede {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--grey-700);
+  margin-bottom: var(--space-3);
+  max-width: 54ch;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .hero__lede {
+    font-size: 21px;
+    line-height: 1.55;
+    margin-bottom: var(--space-4);
+  }
+}
+
+.hero__cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: var(--space-2);
+}
+
+@media (min-width: 480px) {
+  .hero__cta-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    width: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero__cta-group .btn {
+    width: 100%;
+  }
+}
+
+.hero__micro-caption {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--grey-500);
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .hero__micro-caption {
+    font-size: 13px;
+  }
+}
+
+/* Hero Visual Column */
+.hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--space-2);
+}
+
+@media (min-width: 992px) {
+  .hero__visual {
+    margin-top: 0;
+  }
+}
+
+.hero__kiosk-img {
+  max-height: 380px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 48px rgba(1, 0, 0, 0.12));
+  transform-origin: center bottom;
+  will-change: transform, opacity;
+}
+
+@media (min-width: 480px) {
+  .hero__kiosk-img {
+    max-height: 460px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__kiosk-img {
+    max-height: 580px;
+  }
+}
+
+/* Initial Load-in Animations (04 §4.4) */
+.hero-load {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: heroFadeUp 550ms var(--ease-standard) forwards;
+}
+
+.hero-load--eyebrow { animation-delay: 100ms; }
+.hero-load--headline { animation-delay: 180ms; }
+.hero-load--lede { animation-delay: 260ms; }
+.hero-load--cta { animation-delay: 340ms; }
+.hero-load--caption { animation-delay: 380ms; }
+
+.hero-load--visual {
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  animation: heroVisualFadeUp 650ms var(--ease-standard) forwards 420ms;
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroVisualFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

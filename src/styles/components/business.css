@@ -1,0 +1,67 @@
+/**
+ * For Business Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.9 & Mobile Optimization
+ */
+
+.business-section {
+  background-color: var(--white);
+  border-top: 1px solid var(--grey-100);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.business__container {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.business__lede {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--grey-700);
+  margin-bottom: var(--space-3);
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .business__lede {
+    font-size: 21px;
+    line-height: 1.65;
+    margin-bottom: var(--space-4);
+  }
+}
+
+.business__cta-wrap {
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .business__cta-wrap {
+    margin-bottom: var(--space-6);
+  }
+}
+
+/* Secondary product proof: Admin dashboard frame */
+.business__proof-frame {
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--space-3);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .business__proof-frame {
+    margin-top: var(--space-4);
+  }
+}
+
+.business__proof-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

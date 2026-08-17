@@ -1,0 +1,10 @@
+# Node & Editor
+node_modules/
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Large installer executables (>100MB exceeds standard GitHub push limit)
+# Note: Host Papr.Machine-Setup.exe on GitHub Releases or CDN for production distribution
+assets/downloads/*.exe

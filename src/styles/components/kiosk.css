@@ -1,0 +1,125 @@
+/**
+ * The Kiosk Hardware Component Styles — Papr.Machine
+ * Source: 04-UI-COMPONENTS-INTERACTIONS.md §4.8 & Mobile Optimization
+ */
+
+.kiosk-section {
+  background-color: var(--grey-50);
+  border-top: 1px solid var(--grey-100);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.kiosk__grid {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: var(--space-4);
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .kiosk__grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: var(--space-6);
+  }
+}
+
+/* Kiosk visual on left (alternating from hero) */
+.kiosk__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .kiosk__visual {
+    order: 1;
+  }
+}
+
+.kiosk__render-img {
+  max-height: 360px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 36px rgba(1, 0, 0, 0.10));
+}
+
+@media (min-width: 480px) {
+  .kiosk__render-img {
+    max-height: 440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .kiosk__render-img {
+    max-height: 540px;
+  }
+}
+
+/* Kiosk text on right */
+.kiosk__content {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .kiosk__content {
+    order: 2;
+  }
+}
+
+.kiosk__capabilities {
+  list-style: none;
+  margin-top: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .kiosk__capabilities {
+    margin-top: var(--space-4);
+    gap: var(--space-3);
+  }
+}
+
+.kiosk__capability-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--brand-black);
+  line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+  .kiosk__capability-item {
+    font-size: 18px;
+    gap: var(--space-2);
+  }
+}
+
+.kiosk__capability-marker {
+  width: 18px;
+  height: 18px;
+  color: var(--brand-blue);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .kiosk__capability-marker {
+    width: 20px;
+    height: 20px;
+  }
+}

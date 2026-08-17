@@ -1,0 +1,189 @@
+/**
+ * Layout & Spacing Utilities — Papr.Machine
+ * Source: 01-BRAND-DESIGN-SYSTEM.md §1.5
+ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* Section vertical rhythm */
+.section {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+}
+
+/* Background alternation for visual rhythm */
+.section--alt {
+  background-color: var(--grey-50);
+}
+
+.section--dark {
+  background-color: var(--brand-black);
+  color: var(--white);
+}
+
+/* Section Headline */
+.section-heading {
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--brand-black);
+  margin-bottom: var(--space-2);
+  word-break: break-word;
+}
+
+@media (min-width: 480px) {
+  .section-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 44px;
+    margin-bottom: var(--space-3);
+  }
+}
+
+.section-lede {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--grey-700);
+}
+
+@media (min-width: 768px) {
+  .section-lede {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-lede {
+    font-size: 22px;
+  }
+}
+
+/* Device window frame styling per 01 §1.7 */
+.device-frame {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--grey-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-window);
+  overflow: hidden;
+  transition: transform var(--duration-base) var(--ease-standard),
+              box-shadow var(--duration-base) var(--ease-standard);
+}
+
+@media (min-width: 768px) {
+  .device-frame {
+    border-radius: var(--radius-lg);
+  }
+}
+
+.device-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lifted);
+}
+
+.device-frame__header {
+  height: 32px;
+  background-color: var(--grey-50);
+  border-bottom: 1px solid var(--grey-300);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .device-frame__header {
+    height: 36px;
+    padding: 0 16px;
+  }
+}
+
+.device-frame__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--grey-300);
+}
+
+@media (min-width: 768px) {
+  .device-frame__dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.device-frame__dot--red { background-color: #FF5F56; }
+.device-frame__dot--yellow { background-color: #FFBD2E; }
+.device-frame__dot--green { background-color: #27C93F; }
+
+/* Reveal Animation (04 §4.3) */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--duration-base) var(--ease-standard),
+              transform var(--duration-base) var(--ease-standard);
+  will-change: opacity, transform;
+}
+
+.reveal-item.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 40ms; }
+.delay-2 { transition-delay: 80ms; }
+.delay-3 { transition-delay: 120ms; }
+.delay-4 { transition-delay: 160ms; }
